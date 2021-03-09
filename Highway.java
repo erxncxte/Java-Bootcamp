@@ -8,7 +8,8 @@ public class LabProgram {
       boolean primary;
 
       highwayNumber = scnr.nextInt();
-      int prim = ((highwayNumber / 10) % 10) * 10;
+      double prim = ((highwayNumber / 10.0) % 10.0) * 10;
+      int intPrim = (int) prim;
    
       if (highwayNumber < 100 && highwayNumber > 0) {
          primary = true;
@@ -20,7 +21,12 @@ public class LabProgram {
          }
       }
       else if (highwayNumber < 1000 && highwayNumber > 0) {
-         System.out.println("I-" + highwayNumber + " is auxiliary, serving I-" + prim + ", going east/west.");
+         if ((highwayNumber % 2 == 0)){
+            System.out.println("I-" + highwayNumber + " is auxiliary, serving I-" + intPrim + ", going east/west.");
+         }
+         else {
+            System.out.println("I-" + highwayNumber + " is auxiliary, serving I-" + intPrim + ", going north/south.");
+            }
       }
       
       else {
