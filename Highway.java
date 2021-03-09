@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 
-public class LabProgram {
+public class Highway {
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in); 
       int highwayNumber;
