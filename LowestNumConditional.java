@@ -13,5 +13,6 @@ public class LowestNumConditional {
       lowNum = (lowNum < num3) ? lowNum : num3;
       
       System.out.println(lowNum);
+      scnr.close();
    }
 }

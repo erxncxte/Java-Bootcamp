@@ -4,15 +4,12 @@ public class Highway {
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in); 
       int highwayNumber;
-      int primaryNumber;
-      boolean primary;
 
       highwayNumber = scnr.nextInt();
       double prim = ((highwayNumber / 10.0) % 10.0) * 10;
       int intPrim = (int) prim;
    
       if (highwayNumber < 100 && highwayNumber > 0) {
-         primary = true;
          if ((highwayNumber % 2 == 0)){
             System.out.println("I-" + highwayNumber + " is primary, going east/west.");
          }
@@ -32,5 +29,8 @@ public class Highway {
       else {
          System.out.println(highwayNumber + " is not a valid interstate highway number."); 
       }
+   
+      scnr.close();
+
    }
 }

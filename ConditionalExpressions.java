@@ -11,5 +11,6 @@ public class ConditionalExpressions {
       condStr = (userVal < 0) ? "negative" : "non-negative";
 
       System.out.println(userVal + " is " + condStr + ".");
+      scnr.close();
    }
 }
