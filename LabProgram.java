@@ -1,28 +1,21 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 
 public class LabProgram {
    public static void main(String[] args) {
-      Scanner scnr = new Scanner (System.in);
-      String userString = "";
-      boolean keepGoing = true;
-     
-      if ((userString.contains("Done")) || (userString.contains("done")) || (userString.contains("d"))) {
-        keepGoing = false;
-        System.exit(0);
-      }
-      else {
-        keepGoing = true;
-        while (keepGoing == true) {
-            userString = scnr.nextLine();
-            int strLen = userString.length();
-            for (int i = (strLen - 1); i >= 0; i--) {
-                System.out.print(userString.charAt(i));
-            }
-            System.out.println("");
-        }
-         System.out.println("");
-      }
+      Scanner scnr = new Scanner(System.in);
+      String firstName = scnr.next();
+      char firstInitial = firstName.charAt(0);
+      String secondName = scnr.next();
+      char middleInitial = secondName.charAt(0);
+      String thirdName;
+      
+      if (!(thirdName = scnr.next()).isEmpty()) {
+         System.out.println(thirdName + ", " + firstInitial + "." + middleInitial + ".");
+         }
 
-      scnr.close();
+      else if ((thirdName = scnr.next()).isEmpty()) {
+         System.out.println(secondName + ", " + firstInitial + ".");
+      }
+      
    }
 }
