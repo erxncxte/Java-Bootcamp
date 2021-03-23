@@ -19,5 +19,7 @@ public class StringInputStream {
       System.out.println("Month: " + userMonth);
       System.out.println("Date: " + userDate);
       System.out.println("Year: " + userYear);
-   }
+      scnr.close();
+      inSS.close();
+   }  
 }

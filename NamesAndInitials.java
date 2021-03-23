@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 
-public class LabProgram {
+public class NamesAndInitials {
    public static void main(String[] args) {
       Scanner scnr = new Scanner(System.in);
       String firstName = scnr.next();
@@ -17,5 +17,6 @@ public class LabProgram {
          System.out.println(secondName + ", " + firstInitial + ".");
       }
       
+      scnr.close();
    }
 }
